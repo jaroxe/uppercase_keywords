@@ -2,7 +2,7 @@
 Automatically uppercase the keywords in a .sql file
 
 ## Instructions
-keywords.txt contains the list of keywords one wishes to uppercase.
+keywords.txt contains the list of keywords one wishes to uppercase.  
 Place the uppercase_keywords.py, kewyords.txt and the .sql file you wish to uppercase in the same directory.
 
 Navigate to this directory in the console and type the following:
@@ -14,7 +14,15 @@ where example.sql is the name of the file containing the SQL code. This will gen
 ## Example
 
 Original code:
-
+`
+select
+    table1.column1,
+    avg(table1.column3 - table2.column4) as column2
+from table1
+    left join table2 on table1.column5 = table2.column2
+where table1.column3 > 1
+group by table1.column1;
+`
 
 Uppercased code:
 
