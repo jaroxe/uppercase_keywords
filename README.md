@@ -14,7 +14,7 @@ where example.sql is the name of the file containing the SQL code. This will gen
 ## Example
 
 Original code:
-`
+```
 select
     table1.column1,
     avg(table1.column3 - table2.column4) as column2
@@ -22,7 +22,7 @@ from table1
     left join table2 on table1.column5 = table2.column2
 where table1.column3 > 1
 group by table1.column1;
-`
+```
 
 Uppercased code:
 
